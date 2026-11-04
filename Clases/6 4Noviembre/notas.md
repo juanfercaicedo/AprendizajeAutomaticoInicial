@@ -1,0 +1,50 @@
+# Clase 5
+- El modelo de clasificición más simple es la de la clasificación binaria
+
+## Matriz de confusión
+- Es apropiada para un modelo de clasificación
+- Ejemplo en la página 7 del cuaderno
+- En función del contexto nos podemos permitir algunos falsos positivos o falsos negativos.
+    - Utilizamos una **tabla de contigencia** para determinar eso
+---
+## Tabla de contigencia
+- ![TablaDeContigencia]()
+
+- Se va a utilizar 4 métricas, exactitud, precisión, sensibilidad, especificidad
+- Exactitud
+    - La precisión es igual a lo real, siempre nos queda entre 0 y 1
+- El error es lo opuesto a la exactitud en cuanto se equivoca
+    - El error es 1 - la exactitud
+    - Vamos a querer exactitudes cercanas a 1 y errores cercanos a 0
+- Precisión
+    - TP / TP + FP
+    - Es la proporción de instancias clasificadas como positivas que son realmente positivas. Se prioriza cuando el costo de un Falso Positivo es alto
+    - Un ejemplo claro es un filtro de correo spam en un entorno corporativo. Aquí, clasificar un correo importante (legítimo) como spam (Falso Positivo) es grave, pues podría perderse información crítica. Por ello, se prefiere que el modelo sea muy conservador: solo debe marcar como spam si está totalmente seguro, incluso si eso significa dejar pasar algunos correos basura a la bandeja de entrada (baja sensibilidad).
+- Sensibilidad
+    - TP / FN + TP
+    - Proporción de instancias positivas que fueron correctamente identificadas. Se prioriza cuando el costo de un Falso Negativo es alto.
+    - El mejor ejemplo es el diagnóstico médico de una enfermedad grave y contagiosa. El objetivo es detectar a todos los individuos enfermos. Es preferible alarmar a un paciente sano para realizarle más pruebas (Falso Positivo) que enviar a casa a un paciente enfermo diciéndole que está sano (Falso Negativo), ya que esto tendría consecuencias fatales.
+## Puntación F1 o F1 score
+- F1 = `2 x (pre x rec) / pre + rec`
+- Nos ayuda a combinar la precisión y la sensibilidad
+---
+## Curva ROC(Receiver Operating Characteristic)
+- Cuándo tengo un modelo en el que utilizo un umbral, debemos analizar la curva ROC
+- Es la representación gráfica de un par de números(fpr, tpr) -> están en la tabla de contigencia
+- fpr va en el eje de las x
+- tpr va a estar en el eje de las y
+- En medida que vamos generando diferentes umbrales vamos a ir generando la curva ROC
+- Mientras la curva este más pegada al eje de las Y mi modelo es bueno
+- Un modelo perfecto va a ser aquel que cubra la mayor cantidad de área(1)
+- Mientrás más área que cubra la curva, mejor será mi modelo
+- A eso se le llama AUC(Área bajo la curva| Area Under the Curve)
+    - Si[0.97, 1.00] Excelente
+    - Si[0.90, 0.97] Muy bueno
+    - Si[0.75, 0.90] Bueno
+    - Si[0.6, 0.75] Regular
+    - Si[0.50, 0.60] Malo -> Es el peor valor posible
+
+---
+## Materiales de referencia
+- [Resumen clase 05](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Resumenes/Resumen05.pdf)
+- [Clase 05](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Clases/Clase05-1.pdf)
