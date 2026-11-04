@@ -43,8 +43,8 @@
     - Si[0.75, 0.90] Bueno
     - Si[0.6, 0.75] Regular
     - Si[0.50, 0.60] Malo -> Es el peor valor posible
-
 ---
 ## Materiales de referencia
 - [Resumen clase 05](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Resumenes/Resumen05.pdf)
 - [Clase 05](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Clases/Clase05-1.pdf)
+- [Notebook revisado en clase](https://github.com/andres-merino/AprendizajeAutomaticoInicial-05-N0105/blob/main/2-Notebooks/05-1-Evaluacion-de-Modelos-Clasificacion.ipynb)
