@@ -43,8 +43,32 @@
     - Si[0.75, 0.90] Bueno
     - Si[0.6, 0.75] Regular
     - Si[0.50, 0.60] Malo -> Es el peor valor posible
+## Modelos de regresión
+- Asumimos que los datos son continuos
+- La realidad y la predicción las podemos operar
+- |D| -> número de datos
+- **Error absoluto medio**
+    - Se interpreta en función a la distrubición de los datos
+    - Con este error podemos determinar el error porcentual
+- **Error cuadrático medio**
+    - Es mejor que el error absoluto medio
+    - Le elevamos al cuadrado en comparación a el error absoluto medio
+    - Penaliza los errores grandes, es decir si el valor real era 10 y predijo 20, el error es de 10 puntos, 10^2 = 100
+    - Ignora los errores pequeños pero amplifica los grandes
+- **Raíz del error cuadrático medio**
+    - Saca la raíz a los errores del error cuadrático medio
+    - Saca la raíz después de sacar el promedio
+    - Es un error interpretativo
+        - Nos ayuda a interpretar los valores dados por el error cuadrático medio  
+- **Coeficiente de determinación**
+    - Investigar
+
+- [Notebook de regresión](https://colab.research.google.com/github/andres-merino/AprendizajeAutomaticoInicial-05-N0105/blob/main/2-Notebooks/05-1-Evaluacion-de-Modelos-Regresion.ipynb#scrollTo=XpY1I13g5vFL)
+
+
 ---
 ## Materiales de referencia
 - [Resumen clase 05](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Resumenes/Resumen05.pdf)
 - [Clase 05](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Clases/Clase05-1.pdf)
 - [Notebook revisado en clase](https://github.com/andres-merino/AprendizajeAutomaticoInicial-05-N0105/blob/main/2-Notebooks/05-1-Evaluacion-de-Modelos-Clasificacion.ipynb)
+- Revisar como hacer evaluación de modelos de clasificación con más de dos categorías
