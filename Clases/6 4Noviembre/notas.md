@@ -71,8 +71,29 @@
 
 ![imagenModelosDeRegresión](../../Images/ModelosRegresion.png)
 - [Notebook de regresión](https://colab.research.google.com/github/andres-merino/AprendizajeAutomaticoInicial-05-N0105/blob/main/2-Notebooks/05-1-Evaluacion-de-Modelos-Regresion.ipynb#scrollTo=XpY1I13g5vFL)
-
-
+---
+## Métricas de modelos de agrupamiento
+- También se le conoce como clustering y son parte del aprendizaje no supervisado
+- Los datos vienen con etiquetas definidas por lo que se dividen las métricas en dos grupos: **internos** e **externas**
+1. Métricas de evaluación interna:
+   - Evalua que tan bien formados están los modelos de agrupamiento basándose en las características intrínsecas de los datos(distancia, cohesión y separación)
+   - **Coeficiente de Silueta (Silhouette Score):** Mide qué tan similar es un objeto a su propio modelo de agrupamiento en comparación con otros modelos de agrupamiento.
+   - Varía entre -1 y 1.
+   - Un valor cercano a 1 indica que los modelos de agrupamiento están bien separados y definidos. Un valor cercano a 0 indica que los modelos se solapan, y valores negativos significan que los puntos pueden haber sido asignados al modelo de agrupamiento incorrecto.
+   - **Índice de Davies-Bouldin:** Mide la "similitud" promedio entre cada modelo y su modelo más cercano.
+     - Cuanto menor sea el valor, mejor (un valor de 0 indica la separación perfecta). Significa que los modelos son compactos y están muy alejados entre sí.
+   - **Índice de Calinski-Harabasz (Varianza Ratio Criterion):** Evalúa la relación entre la dispersión entre los modelos y la dispersión dentro de los mismos.
+     - Cuanto mayor sea el valor, mejor, ya que indica que los modelos están densamente agrupados y bien separados.
+2. Métricas de Evaluación Externa
+- Se utilizan cuando sí disponemos de etiquetas reales para comparar el resultado de nuestro algoritmo de agrupamiento con la clasificación "correcta" que ya conocemos.
+- **Índice de Rand Ajustado (ARI - Adjusted Rand Index):** Mide la similitud entre dos asignaciones de modelos (la predicha y la real), corrigiendo el azar.
+    - Varía de -1 a 1. Un valor de 1 representa un acuerdo perfecto entre los modelos y las etiquetas reales, mientras que los valores cercanos a 0 o negativos indican asignaciones aleatorias o peores que el azar.
+- **Información Mutua Normalizada (NMI - Normalized Mutual Information):** Basada en la teoría de la información, mide cuánta información comparten los modelos predichos con las etiquetas reales.
+  - Varía entre 0 y 1, donde 1 indica un acuerdo absoluto.
+- **Homogeneidad, Completitud y V-Measure:**
+    - Homogeneidad: Cada modelo contiene únicamente miembros de una sola clase.
+    - Completitud: Todos los miembros de una clase dada se asignan al mismo modelo.
+    - V-Measure: La media armónica entre ambos.
 ---
 ## Materiales de referencia
 - [Resumen clase 05](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Resumenes/Resumen05.pdf)
