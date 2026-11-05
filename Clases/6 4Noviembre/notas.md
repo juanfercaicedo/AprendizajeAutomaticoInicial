@@ -69,6 +69,7 @@
     - El problema de añadir variables: En la regresión múltiple (con más de una variable independiente), el valor de $R^2$ nunca disminuye al agregar más variables, incluso si no tienen relación real con el problema. Esto puede dar una falsa sensación de mejora.
     - La solución ($R^2$ ajustado): Para evitar el engaño de añadir variables innecesarias, los estadísticos suelen utilizar el $R^2$ ajustado, el cual penaliza la inclusión de variables que no aportan un valor predictivo real al modelo.
 
+![imagenModelosDeRegresión](../../Images/ModelosRegresion.png)
 - [Notebook de regresión](https://colab.research.google.com/github/andres-merino/AprendizajeAutomaticoInicial-05-N0105/blob/main/2-Notebooks/05-1-Evaluacion-de-Modelos-Regresion.ipynb#scrollTo=XpY1I13g5vFL)
 
 
