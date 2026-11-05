@@ -37,10 +37,17 @@
 - **Separación de Silueta:**
     - Mide la distancia promedio entre un punto y todos los puntos en el clúster más cercano al que no pertenece, para x ∈ Ci
     - $b(x) = \min_{j \neq i} \frac{1}{|C_j|} \sum_{y \in C_j} d(x, y)$
-
+- Tabla: 
+| Medida | Definición |
+| :--- | :--- |
+| **Inercia total** | $I_{\text{total}} = \sum_{i=1}^{K} I_i = \sum_{i=1}^{K} \sum_{x \in C_i} d(x, \mu_i)^2$ |
+| **Índice de Davies-Bouldin** | $DB = \frac{1}{K} \sum_{i=1}^{K} \max_{j \neq i} \left( \frac{S_i + S_j}{d_c(C_i, C_j)} \right)$ |
+| **Índice de Dunn** | $\text{Dunn} = \frac{\min_{i \neq j} d(C_i, C_j)}{\max_{1 \le k \le K} \text{diam}(C_k)}$ |
+| **Índice de Silueta** | $S = \frac{1}{|D|} \sum_{i=1}^{|D|} \frac{b(x_i) - a(x_i)}{\max\{a(x_i), b(x_i)\}}$ |
 
 
 
 ---
 ## Materiales de clase
 - [Resumen 05](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Resumenes/Resumen05.pdf) - Agrupamientos del clúster
+- [Notebook de agrupamiento](https://colab.research.google.com/github/andres-merino/AprendizajeAutomaticoInicial-05-N0105/blob/main/2-Notebooks/05-2-Evaluacion-de-Modelos-Agrupamiento.ipynb#scrollTo=j4fcUZyg6ck9)
