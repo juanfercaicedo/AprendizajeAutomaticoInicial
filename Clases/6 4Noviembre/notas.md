@@ -8,7 +8,7 @@
     - Utilizamos una **tabla de contigencia** para determinar eso
 ---
 ## Tabla de contigencia
-- ![TablaDeContigencia]()
+- ![TablaDeContigencia](../../Images/ModelosClasificación.png)
 
 - Se va a utilizar 4 métricas, exactitud, precisión, sensibilidad, especificidad
 - Exactitud
@@ -61,7 +61,13 @@
     - Es un error interpretativo
         - Nos ayuda a interpretar los valores dados por el error cuadrático medio  
 - **Coeficiente de determinación**
-    - Investigar
+    - Medida estadística que utiliza regresión lineal para ver que tan bien se ajusta un modelo estadístico a los datos reales.
+    - Indica el porcentaje de la variabilidad de la variable dependiente que puede ser explicado por la variable independiente
+    - Siempre se encuentra entre [0 y 1]
+    - $R^2 = 0$ (o 0%): El modelo no explica nada de la variabilidad de los datos. La línea de regresión no aporta mejor información que simplemente usar la media de los datos.
+    - $R^2 = 1$ (o 100%): El modelo explica el 100% de la variabilidad. Todos los puntos de datos caen exactamente sobre la línea de regresión (ajuste perfecto).
+    - El problema de añadir variables: En la regresión múltiple (con más de una variable independiente), el valor de $R^2$ nunca disminuye al agregar más variables, incluso si no tienen relación real con el problema. Esto puede dar una falsa sensación de mejora.
+    - La solución ($R^2$ ajustado): Para evitar el engaño de añadir variables innecesarias, los estadísticos suelen utilizar el $R^2$ ajustado, el cual penaliza la inclusión de variables que no aportan un valor predictivo real al modelo.
 
 - [Notebook de regresión](https://colab.research.google.com/github/andres-merino/AprendizajeAutomaticoInicial-05-N0105/blob/main/2-Notebooks/05-1-Evaluacion-de-Modelos-Regresion.ipynb#scrollTo=XpY1I13g5vFL)
 
