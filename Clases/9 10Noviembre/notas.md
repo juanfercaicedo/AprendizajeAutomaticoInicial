@@ -28,10 +28,30 @@
 - Cuando vamos a hacer agrupamiento debemos tener cuidado con el escalado y las transformaciones
 - Hay que tener cuidado con transformaciones que se apliquen como normalizado, min max scaler concentra muchos los datos
 - Lo mejor es dejar los datos normales o aplican un standard scaler
+---
+# Introducción clase 9
+## Algoritmos de agrupamiento jerarquico
+- Algoritmos divisivos y aglomerativos
+- Hay dos divisiones(agrupamientos) que no sirve, un solo grupo o que cada elemento este en un grupo solo
+- Hacer agrupamientos divisivos computacionalmente es complejo
+- Los agrupamientos aglomerativos consiste en iniciar en grupos pequeños donde cada elemento pertenece a un grupo el solo, luego vamos añadiendo elementos a los grupos
+    - Computacionalmente más simple
+    - Computacionalmente es más simple condiciones para agrupar cosas que para dividirlas
+- Una forma de calcular las distancia de mejor forma es calcular la distancia entre centroides, calcular el centroide del grupo y comparar la distancia con el resto de grupos(enlace de centroide)
+- Otra forma de medir la distancia entre grupos es medir los puntos más cercanos(Función de enlace simple)
+- Medir los puntos más lejanos(Función de enlace completo)
+- Enlace promedio
 
+## Algorítmo de aglomeración
+- Si vamos agrupar grupos separados, vemos los enlaces más cortos(cercanos o mínimos) para unirlos
+
+---
+## Glosario
+- **Centroide**: Promedio de mis datos
 ---
 ## Materiales de clase
 - [Clase 07](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Clases/Clase07.pdf)
 - [Herramienta de IA](https://consensus.app)
 - [Notebook revisado en clase](https://colab.research.google.com/github/andres-merino/AprendizajeAutomaticoInicial-05-N0105/blob/main/2-Notebooks/07-Normalizacion-Agrupamiento.ipynb)
+- [Clase 08](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Clases/Clase08.pdf)
 
