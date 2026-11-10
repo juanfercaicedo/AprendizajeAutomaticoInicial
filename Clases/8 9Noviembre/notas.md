@@ -31,3 +31,4 @@
 ## Materiales de clase
 - [Tutor de CHATGPT](https://chatgpt.com/g/g-674f787b286c8191aee6a93bde4ede57-tutor-aa-seleccion-de-atributos)
 - [Conversación con ChatGPT](https://chatgpt.com/share/6af24bd5-793c-83eb-8b4d-e31ff40fcd86)
+- [Clase 06: Reducción de Dimensionalidad y Extracción de Características](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Clases/Clase06.pdf)
