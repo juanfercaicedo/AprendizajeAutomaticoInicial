@@ -3,12 +3,12 @@
   - Es un subconjunto de R^n, donde n es el número de columnas que tiene los datos
 ---
 ## Tipos de aprendizajes
-- Un modelo es cualquier función que vaya desde R^n -> R^m
+- Un modelo es cualquier función que vaya desde $R^n$ -> $R^m$
   - Si se los resultados de R^m es un **aprendizaje supervisado** caso contrario es un **aprendizaje no supervisado**
   - A los resultados le vamos a llamar **etiquetas o variable objetivo**
     - Las etiquetas dependen del objetivo
   - Con los mismos datos puedo emplear aprendizaje supervisado y no supervisado, lo que cambia es nuestro objetivo.
-  - **Aprendizaje no supervisado:** Busca descubrir estructura en los datos sin utilizar etiquetas objetivo. En particular, el agrupamiento busca determinar una función: f: R^n ->{1, 2, ..., k}
+  - **Aprendizaje no supervisado:** Busca descubrir estructura en los datos sin utilizar etiquetas objetivo. En particular, el agrupamiento busca determinar una función: f: $R^n$ ->{1, 2, ..., k}
   - Aprendizaje supervisado se ocupa para **predecir**
   - Aprendizaje no supervisado se utiliza para **agrupar**
 ---
