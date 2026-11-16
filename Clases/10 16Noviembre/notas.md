@@ -3,6 +3,9 @@
 - **El método del codo**: El valor el que tenemos que ocupar es el que queda en nuestor codo
   - Se puede hacer visualmente, es un método subjetivo
 - Si los datos tienen diferentes escalas, tengo que hacer una transformación
+- **Verbose** Está por defecto en valor 0
+  - En español "verbose"-> "hablador"
+  - Si le pondemos verbose=1 nos dará información mientras que se compila
 
 
 ## Materiales de clase:
