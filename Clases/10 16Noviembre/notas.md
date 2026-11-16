@@ -1,6 +1,8 @@
 # Clase 9
-
-
+- Cuando la mejora deje de ser significativa, me detengo.
+- **El método del codo**: El valor el que tenemos que ocupar es el que queda en nuestor codo
+  - Se puede hacer visualmente, es un método subjetivo
+- Si los datos tienen diferentes escalas, tengo que hacer una transformación
 
 
 ## Materiales de clase:
