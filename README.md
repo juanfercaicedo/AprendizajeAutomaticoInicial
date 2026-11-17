@@ -10,4 +10,4 @@
 | 5. [Evaluación y Métricas de Modelos](/Clases/6%204Noviembre/notas.md)| --- |
 | 6. [Métricas de agrupamiento](/Clases/7%205Noviembre/notas.md)| --- |
 | 7. [Dimensionalidad](/Clases/8%209Noviembre/notas.md)| --- |
-| 8. [Aprendizaje no supervisado](/Clases/9%2010Noviembre/notas.md) | --- |
+| 8. [Aprendizaje no supervisado](/Clases/9%2010Noviembre/notas.md) | [Deber](./Deber/03-Agrupamiento-Jerarquico.ipynb) |
