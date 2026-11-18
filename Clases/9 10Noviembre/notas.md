@@ -47,7 +47,7 @@
 
 ---
 ## Glosario
-- **Centroide**: Promedio de mis datos
+- **Centroide**: Posición promedio de todos los elementos que componen una figura en el espacio.
 ---
 ## Materiales de clase
 - [Clase 07](https://andres-merino.github.io/AprendizajeAutomaticoInicial-05-N0105/2-Clases/Clase07.pdf)
